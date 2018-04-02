@@ -1,0 +1,29 @@
+.benefitsList {
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 20px;
+		li {
+			margin-bottom: 20px;
+			&:after {
+			    content: '';
+			    display: table;
+			    clear: both;
+			}
+			span {
+				float: left;
+				width: 65px;
+				height: 65px;
+				border-radius: 50%;
+				overflow: hidden;
+				margin-right: 30px;
+				img {
+					min-height: 100%;
+					min-width: 100%;
+					max-height: 65px;
+					max-width: 65px;
+				}
+			}
+		}
+	}
+}

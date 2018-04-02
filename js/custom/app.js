@@ -41,6 +41,20 @@
         }
       });
     }
+    $('.js-slider').slick({
+      centerMode: true,
+      variableWidth: true,
+      centerPadding: '60px',
+      slidesToShow: 1,
+    });
 
+    $(".demo").champ();
+
+    $(".accordion_filter").champ({
+                plugin_type :  "accordion",
+                side : "left",
+                active_tab : "3",
+                controllers : "true"
+      });
   });
 })();

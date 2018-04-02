@@ -1,20 +1,22 @@
 // Open Sans regular, semiBold, bold
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900');
 
 //FONT FAMILIES
 $font-base: 'Open Sans', sans-serif;
 
 //FONT SIZES
-$fontSize-xsmall: 12px;
-$fontSize-small: 14px;
-$fontSize-base: 16px;
+$fontSize-xsmall: 10px;
+$fontSize-small: 12px;
+$fontSize-base: 14px;
 $fontSize-large: 18px;
 $fontSize-larger: 24px;
 $fontSize-largest: 30px;
 
+$fontWeight-light: 300;
 $fontWeight-normal: 400;
 $fontWeight-semibold: 600;
 $fontWeight-bold: 700;
+$fontWeight-extrabold: 900;
 
 //LINE HEIGHTS
 $lineHeight-stightest: 1.15;

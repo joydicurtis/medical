@@ -40,27 +40,37 @@ p {
     }
 }
 h1 {
-    margin: 0 0 20px;
+    margin: 0 0 24px;
     font-size: $fontSize-largest;
     line-height: $lineHeight-stightest;
+    font-weight: $fontWeight-bold;
+    color: $blue--dark;
+    text-transform: uppercase;
 }
 h2 {
-    margin: 0 0 16px;
+    margin: 0 0 24px;
     font-size: $fontSize-larger;
     line-height: $lineHeight-tightest;
+    font-weight: $fontWeight-bold;
+    color: $blue--dark;
+    text-transform: uppercase;
 }
 h3 {
-    margin: 0 0 14px;
+    margin: 0 0 24px;
     font-size: $fontSize-large;
     line-height: $lineHeight-tighter;
+    font-weight: $fontWeight-extrabold;
+    color: $blue--dark;
 }
 blockquote {
     margin: 1em 0;
-    padding-left: 20px;
-    font-size: $fontSize-larger;
+    padding-left: 0;
+    font-size: $fontSize-base;
+    font-style: italic;
     line-height: $lineHeight-tight;
-    border: 1px solid $black;
+    border: none;
     border-width: 0 0 0 2px;
+    color: $blue--dark;
     &:last-child {
         margin-bottom: 0;
     }
@@ -79,3 +89,4 @@ video {
     max-width: 100%;
     vertical-align: middle;
 }
+
