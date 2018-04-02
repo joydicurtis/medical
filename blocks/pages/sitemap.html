@@ -1,19 +1,32 @@
+<section class="siteSection siteSection--noPad">
+    <?php require('blocks/partials/teaser.html'); ?>
+</section>
+
 <!--Markup for one row (no sidebar)-->
-<section class="siteSection">
-    <div class="row">
+<section class="siteSection siteSection--gray">
+    <div class="container">
         <h1 class="u-text--center">Body Content NO sidebar</h1>
         <ul>
             <li><a href="home.html" target="_blank">Home Page</a></li>
+            <li><a href="product.html" target="_blank">Product</a></li>
+            <li><a href="products.html" target="_blank">Products</a></li>
+            <li><a href="category.html" target="_blank">Category</a></li>
+            <li><a href="article.html" target="_blank">Article</a></li>
+            <li><a href="news.html" target="_blank">News</a></li>
+            <li><a href="delivery.html" target="_blank">Delivery</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
         </ul>
     </div>
 </section>
-
-<!--  Markup for sidebar -->
-<h1 class="u-text--center">Markup for sidebar</h1>
-<section class="siteSection">
-    <div class="row has-sidebar">
-        <div class="siteContent-body">
-            <h1>Body Content H1</h1>
+<section class="siteSection siteSection--gray-light">
+    <div class="container">
+        <div class="col-md-3">
+            <h2>Sidebar Content H2</h2>
+            <!--Sidebar Content-->
+            <?php require('blocks/partials/rating.html'); ?>
+        </div>
+        <div class="col-md-9">
+            <h2 class="u-text--center">Body Content H2</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque placeat praesentium soluta! Alias aliquid consequuntur dicta facere iste laborum nam numquam omnis quia soluta tempora ut, veniam. Dolore quia, quis!</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aliquid commodi dicta est hic impedit maiores nesciunt, qui ratione rem repudiandae sed tenetur veniam voluptatum. Asperiores molestiae nulla sint!</p>
             <blockquote>
@@ -22,16 +35,10 @@
                 </p>
             </blockquote>
         </div>
-        <div class="siteContent-side">
-            <h2>Sidebar Content H2</h2>
-            <!--Sidebar Content-->
-            <?php require('blocks/partials/rating.html'); ?>
-        </div>
     </div>
 </section>
-
-<section class="siteSection">
-    <div class="row">
+<section class="siteSection siteSection">
+    <div class="container">
         <h3>form elements  H3</h3>
         <p>
             <button>Simple button</button>
@@ -41,14 +48,8 @@
             <input type="text" placeholder="Name">
             <input type="email" placeholder="email" value="casino@gmail.com">
         </p>
-    </div>
-</section>
-
-<section class="siteSection">
-    <div class="row">
         <h3>Contact Form</h3>
 
         <?php require('blocks/partials/contact-form.html'); ?>
-
     </div>
 </section>

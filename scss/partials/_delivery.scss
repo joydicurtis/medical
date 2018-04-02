@@ -1,0 +1,51 @@
+.whyUs {
+	border-bottom: solid 1px $gray--light;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+.whyUs-img {
+	height: 220px;
+	background: #f4f7fa;
+	border: solid 1px #e2e5e8;
+	line-height: 220px;
+	text-align: center;
+	margin-bottom: 15px;
+	img {
+		vertical-align: middle;
+	}
+}
+.whyUs-title {
+	text-align: center;
+	font-size: $fontSize-small;
+	font-weight: $fontWeight-semibold;
+	color: $blue--dark;
+}
+.deliveryItem {
+	background: #f4f7fa;
+	border: solid 1px #e2e5e8;
+	padding: 15px 30px;
+	display: table;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.deliveryItem-img {
+	float: left;
+	width: 65px;
+	height: 65px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-right: 30px;
+	display: table-cell;
+	vertical-align: middle;
+	img {
+		min-width: 65px;
+		min-height: 65px;
+		width: auto;
+		height: auto;
+	}
+}
+.deliveryItem-text {
+	overflow: hidden;
+	display: table-cell;
+	vertical-align: middle;
+}

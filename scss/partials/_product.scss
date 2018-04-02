@@ -1,0 +1,82 @@
+.productList-item {
+	position: relative;
+	background: $white;
+	box-shadow: 0px 2px 9px 0 rgba(46, 41, 74, 0.06);	
+	text-align: center;
+	padding: 15px;
+	width: 100%;
+	max-width: 360px;
+	margin: 20px auto 30px;
+}
+.productList-banner {
+	position: absolute;
+	display: inline-block;
+	border-radius: 15px;
+	color: $white;
+	text-transform: uppercase;
+	padding: 8px 15px;
+	font-size: 11px;
+	font-weight: $fontWeight-bold;
+	text-align: center;
+    transform: translate(-50%, -100%);
+    @include breakpoint(large) {
+    	font-size: 9px;
+    }
+	&.productList-banner--leak {
+		background: $blue;
+	}
+	&.productList-banner--sale {
+		background: $red; 
+	}
+}
+.productList-img {
+	height: 210px;
+	overflow: hidden;
+	margin-bottom: 15px;
+	img {
+		display: inline-block;
+	}
+}
+.productList-title {
+	height: 42px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	a {
+		color: $blue--dark;
+	}
+}
+.productList-price {
+	color: $blue--dark;
+	font-size: $fontSize-larger;
+	line-height: 1;
+	margin-bottom: 15px;
+	height: 58px;
+	overflow: hidden;
+	span {
+		display: block;
+		margin-bottom: 20px;
+		color: $color-bodyText;
+		text-decoration:line-through;
+		font-size: $fontSize-base;
+	}
+}
+.loadingItem {
+	position: relative;
+}
+.loadingItem-link {
+	color: $blue--dark;
+	font-weight: $fontWeight-bold;
+	font-size: $fontSize-small;
+	text-align: center;
+	&:before {
+		content: '';
+		display: inline-block;
+		width: 43px;
+		height: 41px;
+		background: url("../images/sprite.png");
+		background-position: -10px -10px;
+		position: relative;
+		top: 15px;
+		margin-right: 20px;
+	}
+}

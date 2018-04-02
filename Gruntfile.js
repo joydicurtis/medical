@@ -38,7 +38,8 @@ module.exports = function (grunt) {
           'js/vendor.min.js': [
             'js/vendor/ofi.min.js',
             'js/vendor/matchMedia.js',
-            'js/vendor/slick.js'
+            'js/vendor/slick.js',
+            'js/vendor/jquery.multipurpose_tabcontent.js'
           ]
         }
       },

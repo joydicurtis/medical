@@ -1,18 +1,31 @@
 .pagination-wrapper {
     margin-top: 20px;
     text-align: center;
+    .pagination {
+        margin: 5px 0;
+    }
     .page-numbers {
         display: inline-block;
         margin: 0 7px;
         vertical-align: middle;
-        color: $color-primary;
+        color: $blue--dark;
         text-decoration: none;
         transition: color .3s ease-in-out;
+        font-size: $fontSize-small;
+        font-weight: $fontWeight-bold;
         &:hover {
-            color: $color-secondary;
+            color: $color-primary;
+            text-decoration: underline;
         }
         &.current {
-            color: $color-secondary;
+            color: $color-primary;
+            text-decoration: underline;
+        }
+        &.dots {
+            &:hover {
+                color: $blue--dark;
+                text-decoration: none;
+            }            
         }
         &.prev,
         &.next {
@@ -39,4 +52,9 @@
             }
         }
     }
+}
+.pagination--toright {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
